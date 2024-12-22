@@ -2,20 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base{
+    .nav-item{
+        @apply text-sm font-medium hover:bg-white hover:text-slate-900 px-4 py-1.5 rounded-full
+    }
+    .hero-ring{
+        @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-emerald-300/5 shadow-[0px_0px_80px_inset] shadow-emerald-300/5 border;
+    }
 }
