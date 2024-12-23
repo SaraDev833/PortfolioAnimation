@@ -8,6 +8,7 @@ import Star from "@/components/Star";
 const Hero = () => {
     return (
         <div className="py-24 md:py-30 lg:py-35 relative z-0 overflow-x-clip">
+            <div className="absolute inset-0 "style={{ maskImage: "linear-gradient(to bottom, transparent, black 3%, black 70%, transparent)" }}>
             <div className="absolute inset-0 opacity-5 -z-30" style={{ backgroundImage: `url(${grainImage})` }}></div>
             <div className="h-[420px] w-[420px] hero-ring"></div>
             <div className="sm:h-[620px] sm:w-[620px] hero-ring"></div>
@@ -16,7 +17,7 @@ const Hero = () => {
             <div className="lg:h-[1220px] lg:w-[1220px] hero-ring"></div>
 
             <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
-                <Star rotation={10} md={500} lg={550} sm={500} xs={375} rotate={80} size={10} />
+                <Star rotation={10} md={500} lg={550} sm={500} xs={375} rotate={80} size={14} />
             </div>
             <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
                 <div className={` lg:size-[530] md:size-[500px] sm:size-[450px] xs:size-[375px] `} style={{ transform: `rotate(180deg)` }}>
@@ -38,6 +39,11 @@ const Hero = () => {
                 <Star rotation={-72} md={600} lg={700} sm={400} xs={375} rotate={72} size={14} />
             </div>
             <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
+                <div className={` lg:size-[700] md:size-[500px] sm:size-[450px] xs:size-[375px] `} style={{ transform: `rotate(145deg)` }}>
+                    <div className="h-2 w-2 bg-white/15 rounded-full"></div>
+                </div>
+            </div>
+            <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
                 <div className={` lg:size-[400] md:size-[500px] sm:size-[450px] xs:size-[375px] `} style={{ transform: `rotate(120deg)` }}>
                     <div className="h-2 w-2 bg-white/20 rounded-full"></div>
                 </div>
@@ -54,15 +60,22 @@ const Hero = () => {
             <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
                 <Star rotation={60} md={600} lg={630} sm={400} xs={375} rotate={72} size={9} color='text-white' sparkle={true} sparkColor='text-white' sparkRotate={30} />
             </div>
+            <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
+                <Star rotation={120} md={600} lg={640} sm={400} xs={375} rotate={72} size={14} color='text-red-400' sparkle={true} sparkColor='text-white/80' sparkRotate={57} />
+            </div>
+            <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
+                <Star rotation={100} md={600} lg={700} sm={400} xs={375} rotate={80} size={14} color='text-white/20' />
+            </div>
 
 
-
+            </div>
 
             <div className="container">
                 <div className="flex flex-col items-center justify-center w-full">
+                    
                     <div className="flex flex-col items-center justify-center max-w-lg">
                         <Image src={mimojiImage} height={150} width={150} alt='' />
-                        <div className="px-2 py-1 bg-black rounded-full flex items-center justify-center">
+                        <div className="px-2 py-1 bg-black rounded-full flex items-center justify-center gap-2">
                             <div className="bg-green-500 size-2 rounded-full"></div>
                             <div className="text-sm font-normal ">Available for new projects</div>
                         </div>
