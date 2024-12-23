@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
+@layer components{
     .nav-item{
-        @apply text-sm font-medium hover:bg-white hover:text-slate-900 px-4 py-1.5 rounded-full
+        @apply text-sm font-medium px-4 py-1.5 rounded-full hover:bg-white hover:text-slate-900 transition duration-300 cursor-pointer
     }
     .hero-ring{
         @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-emerald-300/5 shadow-[0px_0px_80px_inset] shadow-emerald-300/5 border;
