@@ -75,20 +75,20 @@ const Hero = () => {
                     
                     <div className="flex flex-col items-center justify-center max-w-lg">
                         <Image src={mimojiImage} height={150} width={150} alt='' />
-                        <div className="px-2 py-1 bg-black rounded-full flex items-center justify-center gap-2">
+                        <div className="z-10 px-2 py-1 bg-black rounded-full flex items-center justify-center gap-2">
                             <div className="bg-green-500 size-2 rounded-full"></div>
                             <div className="text-sm font-normal ">Available for new projects</div>
                         </div>
-                        <div className="mt-5">
-                            <h2 className="text-2xl font-medium text-center tracking-wide">Building Exceptional User Experiences</h2>
-                            <p className="mt-3 text-sm text-white/25 text-center">I specialize in transforming designs into functional high-performing web applications. Let's discuss your new project</p>
+                        <div className="mt-5 ">
+                            <h2 className=" font-serif  text-2xl font-medium text-center tracking-wider lg:text-4xl">Building Exceptional User Experiences</h2>
+                            <p className="lg:my-6 mt-3 text-sm text-white/25 text-center lg:text-lg">I specialize in transforming designs into functional high-performing web applications. Let's discuss your new project</p>
                         </div>
-                        <div className="flex flex-col md:flex-row mt-3 gap-3">
-                            <button className="flex font-medium bg-transparent border border-white/20 px-3 py-2 rounded-lg text-sm gap-1 items-center justify-center">
+                        <div className="flex flex-col md:flex-row mt-3 gap-3 ">
+                            <button className=" z-10 lg:text-lg flex font-medium bg-transparent  border-2 border-white/20 px-3 py-2 rounded-lg text-sm gap-1 items-center justify-center">
                                 <span>Explore My Work</span>
                                 <ArrowDown className='h-4 w-4' />
                             </button>
-                            <button className="flex font-medium bg-white text-slate-900 px-3 py-2 rounded-lg text-sm gap-1 items-center justify-center">
+                            <button className="flex  cursor-pointer z-10 font-medium bg-white text-slate-900 px-3 py-2 rounded-lg text-sm gap-1 items-center justify-center lg:text-lg">
                                 <span>👋</span>
                                 <span>Let's Connect</span>
                             </button>

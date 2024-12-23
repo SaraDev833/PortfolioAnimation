@@ -2,6 +2,7 @@ import React from 'react'
 import projectOneImage from "@/assets/images/dark-saas-landing-page.png"
 import projectTwoImage from "@/assets/images/light-saas-landing-page.png"
 import projectThreeImage from "@/assets/images/ai-startup-landing-page.png"
+import GrainImage from "@/assets/images/grain.jpg"
 import ArrowIcon from "@/assets/icons/arrow-up-right.svg"
 import Link from 'next/link'
 import Image from 'next/image'
@@ -36,7 +37,7 @@ const Projects = () => {
     ]
 
     return (
-        <div>
+        <div className='pb-24 md:pb-30 lg:pb-35'>
             <div className='container'>
                 <div className='flex justify-center'>
                     <p className='uppercase sm:text-lg  bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text font-semibold'>real-world results</p>
@@ -46,24 +47,35 @@ const Projects = () => {
                 <div className='flex flex-col gap-16 mt-8'>
                     {projects.map((project) => {
                         return (
-                            <div key={project.title} className='bg-gray-800 px-8 pt-8 rounded-3xl z-0 relative after:content-[""] after:absolute  after:inset-0 after:-z-10 after:outline-2 after:outline after:outline-white/20 after:-outline-offset-2 after:rounded-3xl'>
-                                <div className='text-sm bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent  bg-clip-text font-bold sm:text-[16px] md:text-lg'>
-                                    <span >{project.company}</span>
-                                    <span> &bull; </span>
-                                    <span >{project.date}</span>
-                                </div>
-                                <h3 className='mt-4  font-medium font-serif  text-xl tracking-wider sm:text-3xl md:text-4xl'>{project.title}</h3>
-                                <hr className='mt-4 border-white/20' />
-                                <p className=' mt-4 sm:mt-6  text-white/60 text-sm sm:text-[16px] md:text-lg'>{project.description}</p>
-                                <a href={project.link}>
-                                    <div className='flex items-center justify-center sm:mt-6 md:mt-10 mb-6'>
-                                        <button className='inline-flex px-4 py-2 bg-white text-slate-900 font-bold text-sm m-0 justify-center items-center mb-6 rounded-3xl cursor-pointer sm:text-[16px] gap-1 sm:py-3 sm:px-6 md:text-lg'>Visit Live Site
-                                            <ArrowIcon className="size-4 sm:size-6" />
-                                        </button>
-                                    </div>
+                            <div key={project.title} className='bg-gray-800 px-8 pt-8 lg:pt-16 lg:pr-0 rounded-3xl z-0 relative after:content-[""] after:absolute  after:inset-0 after:-z-10 after:outline-2 after:outline after:outline-white/20 
+                            after:-outline-offset-2 after:rounded-3xl after:pointer-events-none'>
+                                <div className='absolute inset-0 -z-10 opacity-5' style={{ backgroundImage: `url(${GrainImage.src})` }}></div>
+                                <div className='lg:grid lg:grid-cols-2 lg:gap-16 '>
 
-                                </a>
-                                <Image src={project.image} alt='projectImage' className='mb-[2px]' />
+                                    <div className='lg:pb-16'>
+                                        <div className='text-sm bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent  bg-clip-text font-bold sm:text-[16px] md:text-lg whitespace-nowrap'>
+                                            <span >{project.company}</span>
+                                            <span> &bull; </span>
+                                            <span >{project.date}</span>
+                                        </div>
+                                        <h3 className='mt-4  font-medium font-serif  text-xl tracking-wider sm:text-2xl md:text-3xl'>{project.title}</h3>
+                                        <hr className='mt-4 border-white/20' />
+                                        <p className=' mt-4 sm:mt-6  text-white/60 text-sm sm:text-[16px] md:text-lg xs:my-6'>{project.description}</p>
+                                        <a href={project.link}>
+                                            <div className='flex items-center justify-center sm:mt-6 md:mt-10 mb-4 md:justify-start '>
+                                                <button className='inline-flex px-4 py-2 bg-white text-slate-900 font-bold text-sm m-0 justify-center items-center mb-6 rounded-3xl cursor-pointer sm:text-[16px] gap-1 sm:py-3 sm:px-6 md:text-lg'>Visit Live Site
+                                                    <ArrowIcon className="size-4 sm:size-6" />
+                                                </button>
+                                            </div>
+
+                                        </a>
+                                    </div>
+                                    <div className='lg:relative lg:overflow-hidden'>
+                                        <Image src={project.image} alt='projectImage' className='mb-[2px] lg:absolute lg:h-full lg:w-auto  lg:max-w-none lg:mt-0 lg:bottom-[1px] lg:-z-10 ' /
+                                        
+                                        >
+                                    </div>
+                                </div>
                             </div>
                         )
                     })}
