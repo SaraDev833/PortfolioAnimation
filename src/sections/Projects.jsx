@@ -7,6 +7,7 @@ import ArrowIcon from "@/assets/icons/arrow-up-right.svg"
 import Link from 'next/link'
 import Image from 'next/image'
 import Hero from './Hero';
+import SectionHeader from '@/components/SectionHeader'
 const Projects = () => {
     const projects = [
         {
@@ -39,11 +40,7 @@ const Projects = () => {
     return (
         <div className='pb-24 md:pb-30 lg:pb-35'>
             <div className='container'>
-                <div className='flex justify-center'>
-                    <p className='uppercase sm:text-lg  bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text font-semibold'>real-world results</p>
-                </div>
-                <h1 className='font-serif text-2xl font-medium text-center mt-4 sm:text-3xl md:text-4xl'>Featured Projects</h1>
-                <p className='text-white/60 font-medium text-sm text-center my-6 max-w-sm mx-auto sm:text-[16px] sm:my-8 md:text-lg'>See how I transformed concepts into engaging digital experiences.</p>
+                <SectionHeader title="Featured Projects" subTitle="real-world results" description="See how I transformed concepts into engaging digital experiences."/>
                 <div className='flex flex-col gap-16 mt-8'>
                     {projects.map((project) => {
                         return (

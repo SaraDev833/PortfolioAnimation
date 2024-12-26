@@ -15,7 +15,7 @@ const Hero = () => {
             <div className="md:h-[820px] md:w-[820px] hero-ring"></div>
             <div className="lg:h-[1020px] lg:w-[1020px] hero-ring"></div>
             <div className="lg:h-[1220px] lg:w-[1220px] hero-ring"></div>
-
+        <div className="absolute top-[10%] right-[10%] bg-white text-slate-900">Finished date: 25 December ,2024</div>
             <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
                 <Star rotation={10} md={500} lg={550} sm={500} xs={375} rotate={80} size={14} />
             </div>

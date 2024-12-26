@@ -15,4 +15,8 @@
     .container{
         @apply lg:max-w-5xl
     }
+    .card{
+        @apply overflow-hidden bg-gray-800 px-8 pt-8 lg:pt-16 lg:pr-0 rounded-3xl z-0 relative w-[370px] after:content-[""] after:absolute  after:inset-0 after:-z-10 after:outline-2 after:outline after:outline-white/20 
+                            after:-outline-offset-2 after:rounded-3xl after:pointer-events-none h-[320px] 
+    }
 }
