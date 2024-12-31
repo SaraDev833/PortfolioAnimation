@@ -7,76 +7,86 @@ import Star from "@/components/Star";
 
 const Hero = () => {
     return (
-        <div className="py-24 md:py-30 lg:py-35 relative z-0 overflow-x-clip">
-            <div className="absolute inset-0 "style={{ maskImage: "linear-gradient(to bottom, transparent, black 3%, black 70%, transparent)" }}>
-            <div className="absolute inset-0 opacity-5 -z-30" style={{ backgroundImage: `url(${grainImage})` }}></div>
-            <div className="h-[420px] w-[420px] hero-ring"></div>
-            <div className="sm:h-[620px] sm:w-[620px] hero-ring"></div>
-            <div className="md:h-[820px] md:w-[820px] hero-ring"></div>
-            <div className="lg:h-[1020px] lg:w-[1020px] hero-ring"></div>
-            <div className="lg:h-[1220px] lg:w-[1220px] hero-ring"></div>
-        <div className="absolute top-[10%] right-[10%] bg-white text-slate-900">Finished date: 25 December ,2024</div>
-            <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
-                <Star rotation={10} md={500} lg={550} sm={500} xs={375} rotate={80} size={14} />
-            </div>
-            <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
-                <div className={` lg:size-[530] md:size-[500px] sm:size-[450px] xs:size-[375px] `} style={{ transform: `rotate(180deg)` }}>
-                    <div className="h-1 w-1 bg-white/70 rounded-full"></div>
+        <div className="pt-24 md:pt-30 lg:pt-35 relative z-0 overflow-x-clip" id='home'>
+            <div className="absolute inset-0 " style={{ maskImage: "linear-gradient(to bottom, transparent, black 3%, black 70%, transparent)" }}>
+                <div className="absolute inset-0 opacity-5 -z-30" style={{ backgroundImage: `url(${grainImage})` }}></div>
+                <div className="h-[420px] w-[420px] hero-ring"></div>
+                <div className="sm:h-[620px] sm:w-[620px] hero-ring"></div>
+                <div className="md:h-[820px] md:w-[820px] hero-ring"></div>
+                <div className="lg:h-[1020px] lg:w-[1020px] hero-ring"></div>
+                <div className="lg:h-[1220px] lg:w-[1220px] hero-ring"></div>
+                <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
+                    <Star rotation={10} md={500} lg={550} sm={500} xs={375} rotate={80} size={18} OrbitalSpinDuration="24s"/>
                 </div>
-            </div>
-            <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
-                <div className={` lg:size-[534] md:size-[500px] sm:size-[450px] xs:size-[375px] `} style={{ transform: `rotate(-50deg)` }}>
-                    <div className="h-1 w-1 bg-white/70 rounded-full"></div>
+                <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
+                    <div className={` lg:size-[530] md:size-[500px] sm:size-[450px] xs:size-[375px] `} style={{ transform: `rotate(180deg)` }}>
+                        <div className="h-1 w-1 bg-white/70 rounded-full"></div>
+                    </div>
                 </div>
-            </div>
-            <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
-                <div className={` lg:size-[400px] md:size-[500px] sm:size-[450px] xs:size-[375px] `} style={{ transform: `rotate(50deg)` }}>
-                    <div className="h-1 w-1 bg-white/70 rounded-full"></div>
+                <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
+                    <Star rotation={-72} md={600} lg={700} sm={400} xs={375} rotate={72} size={14} OrbitalSpinDuration="20s"/>
                 </div>
-            </div>
-            {/* Second Star */}
-            <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
-                <Star rotation={-72} md={600} lg={700} sm={400} xs={375} rotate={72} size={14} />
-            </div>
-            <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
-                <div className={` lg:size-[700] md:size-[500px] sm:size-[450px] xs:size-[375px] `} style={{ transform: `rotate(145deg)` }}>
-                    <div className="h-2 w-2 bg-white/15 rounded-full"></div>
+                <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
+                    <Star rotation={-60} md={600} lg={630} sm={400} xs={375} rotate={72} size={9} color='text-white' sparkle={true} sparkColor='text-white' sparkRotate={58} OrbitalSpinDuration="30s"/>
                 </div>
-            </div>
-            <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
-                <div className={` lg:size-[400] md:size-[500px] sm:size-[450px] xs:size-[375px] `} style={{ transform: `rotate(120deg)` }}>
-                    <div className="h-2 w-2 bg-white/20 rounded-full"></div>
+                <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
+                    <div className={` lg:size-[600px] md:size-[500px] sm:size-[450px] xs:size-[375px] `} style={{ transform: `rotate(-18deg)` }}>
+                        <div className="h-5 w-5 bg-white/15 rounded-full"></div>
+                    </div>
                 </div>
-            </div>
-            <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
-                <Star rotation={180} md={600} lg={550} sm={400} xs={375} rotate={90} size={9} color='text-white' />
-            </div>
-            <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
-                <Star rotation={-25} md={600} lg={700} sm={400} xs={375} rotate={115} size={9} color='text-white/15' />
-            </div>
-            <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
-                <Star rotation={-60} md={600} lg={630} sm={400} xs={375} rotate={72} size={9} color='text-white' sparkle={true} sparkColor='text-white' sparkRotate={58} />
-            </div>
-            <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
-                <Star rotation={60} md={600} lg={630} sm={400} xs={375} rotate={72} size={9} color='text-white' sparkle={true} sparkColor='text-white' sparkRotate={30} />
-            </div>
-            <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
-                <Star rotation={120} md={600} lg={640} sm={400} xs={375} rotate={72} size={14} color='text-red-400' sparkle={true} sparkColor='text-white/80' sparkRotate={57} />
-            </div>
-            <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
-                <Star rotation={100} md={600} lg={700} sm={400} xs={375} rotate={80} size={14} color='text-white/20' />
-            </div>
+                <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
+                    <div className={` lg:size-[534] md:size-[500px] sm:size-[450px] xs:size-[375px] `} style={{ transform: `rotate(-50deg)` }}>
+                        <div className="h-1 w-1 bg-white/70 rounded-full"></div>
+                    </div>
+                </div>
+                <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
+                    <div className={` lg:size-[400px] md:size-[500px] sm:size-[450px] xs:size-[375px] `} style={{ transform: `rotate(50deg)` }}>
+                        <div className="h-1 w-1 bg-white/70 rounded-full"></div>
+                    </div>
+                </div>
+                {/* Second Star */}
+                <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
+                    <div className={` lg:size-[700] md:size-[500px] sm:size-[450px] xs:size-[375px] `} style={{ transform: `rotate(145deg)` }}>
+                        <div className="h-2 w-2 bg-white/15 rounded-full"></div>
+                    </div>
+                </div>
+                <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
+                    <div className={` lg:size-[400] md:size-[500px] sm:size-[450px] xs:size-[375px] `} style={{ transform: `rotate(120deg)` }}>
+                        <div className="h-2 w-2 bg-white/20 rounded-full"></div>
+                    </div>
+                </div>
+                <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
+                    <Star rotation={180} md={600} lg={550} sm={400} xs={375} rotate={90} size={9} color='text-white' OrbitalSpinDuration="18s"/>
+                </div>
+                <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
+                    <Star rotation={-25} md={600} lg={700} sm={400} xs={375} rotate={115} size={9} color='text-white/15'OrbitalSpinDuration="22s" />
+                </div>
+                <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
+                    <Star rotation={-50} md={600} lg={100} sm={400} xs={375} rotate={10} size={20} color='text-green-400/15' OrbitalSpinDuration="20s"/>
+                </div>
+             
+                <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
+                    <Star rotation={60} md={600} lg={630} sm={400} xs={375} rotate={72} size={9} color='text-white' sparkle={true} sparkColor='text-white' sparkRotate={30} OrbitalSpinDuration="26s"/>
+                </div>
+                <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
+                    <Star rotation={120} md={600} lg={640} sm={400} xs={375} rotate={72} size={14} color='text-red-400' sparkle={true} sparkColor='text-white/80' sparkRotate={57} OrbitalSpinDuration="19s"/>
+                </div>
+                <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
+                    <Star rotation={100} md={600} lg={700} sm={400} xs={375} rotate={80} size={14} color='text-white/20' OrbitalSpinDuration="22s"/>
+                </div>
 
 
             </div>
 
             <div className="container">
                 <div className="flex flex-col items-center justify-center w-full">
-                    
+
                     <div className="flex flex-col items-center justify-center max-w-lg">
                         <Image src={mimojiImage} height={150} width={150} alt='' />
                         <div className="z-10 px-2 py-1 bg-black rounded-full flex items-center justify-center gap-2">
-                            <div className="bg-green-500 size-2 rounded-full"></div>
+                            <div className="bg-green-500 size-2 rounded-full relative ">
+                                <div className="absolute bg-green-500 inset-0 animate-ping-lg rounded-full"></div>
+                            </div>
                             <div className="text-sm font-normal ">Available for new projects</div>
                         </div>
                         <div className="mt-5 ">

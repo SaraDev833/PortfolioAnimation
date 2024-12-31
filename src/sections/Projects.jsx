@@ -38,13 +38,13 @@ const Projects = () => {
     ]
 
     return (
-        <div className='pb-24 md:pb-30 lg:pb-35'>
+        <div className='pt-24 md:pt-30 lg:pt-35 ' id='project'>
             <div className='container'>
                 <SectionHeader title="Featured Projects" subTitle="real-world results" description="See how I transformed concepts into engaging digital experiences."/>
                 <div className='flex flex-col gap-16 mt-8'>
                     {projects.map((project) => {
                         return (
-                            <div key={project.title} className='bg-gray-800 px-8 pt-8 lg:pt-16 lg:pr-0 rounded-3xl z-0 relative after:content-[""] after:absolute  after:inset-0 after:-z-10 after:outline-2 after:outline after:outline-white/20 
+                            <div key={project.title} className='bg-gray-800 px-8 pt-8 lg:pt-16 lg:pr-0 rounded-3xl z-0 relative after:content-[""] after:absolute  after:inset-0 after:-z-10 after:outline-2 after:outline after:outline-white/20 sticky top-6
                             after:-outline-offset-2 after:rounded-3xl after:pointer-events-none'>
                                 <div className='absolute inset-0 -z-10 opacity-5' style={{ backgroundImage: `url(${GrainImage.src})` }}></div>
                                 <div className='lg:grid lg:grid-cols-2 lg:gap-16 '>
@@ -68,9 +68,7 @@ const Projects = () => {
                                         </a>
                                     </div>
                                     <div className='lg:relative lg:overflow-hidden'>
-                                        <Image src={project.image} alt='projectImage' className='mb-[2px] lg:absolute lg:h-full lg:w-auto  lg:max-w-none lg:mt-0 lg:bottom-[1px] lg:-z-10 ' /
-                                        
-                                        >
+                                        <Image src={project.image} alt='projectImage' className='mb-[2px] lg:absolute lg:h-full lg:w-auto  lg:max-w-none lg:mt-0 lg:bottom-[1px] lg:-z-10 '/>
                                     </div>
                                 </div>
                             </div>
