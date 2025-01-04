@@ -11,7 +11,7 @@ const Star = ({ rotation, md, lg, sm, xs, rotate, size, color, sparkle, sparkCol
             <div className={`  lg:size-[${lg}px] md:size-[${md}px] sm:size-[${sm}px] xs:size-[${xs}px] `} style={{ transform: `rotate(${rotation}deg)` }}>
                 {sparkle ? <SparkleIcon className={`${sparkColor} size-4 `} style={{ transform: `rotate(${sparkRotate}deg) ` }} />
                     :
-                    <StarIcon className={` size-${size} text-emerald-500 animate-spin  ${color} size-12`} style={{ transform: `rotate(${rotate}deg)`, animationDuration: '10s' }} />}
+                    <StarIcon className={` size-${size} text-cyan-500 animate-spin  ${color} size-12`} style={{ transform: `rotate(${rotate}deg)`, animationDuration: '10s' }} />}
             </div>
         </div>
 

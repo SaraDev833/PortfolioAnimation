@@ -4,7 +4,7 @@ const AboutInfo = ({title , description}) => {
   return (
     <div>
         <div className="flex items-center gap-4">
-      <StarIcon className="size-8 text-emerald-300 "/>
+      <StarIcon className="size-8 text-cyan-400 "/>
       <span className="font-serif text-3xl">{title}</span>
       </div>
     

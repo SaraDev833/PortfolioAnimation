@@ -18,7 +18,7 @@ const items = [
 const Tap = () => {
   return (
     <div className='py-16'>
-      <div className="overflow-x-clip bg-gradient-to-r from-emerald-300 to-sky-400 py-3 gap-4 -rotate-3 -mx-1">
+      <div className="overflow-x-clip bg-gradient-to-r from-cyan-400 via-indigo-500 to-sky-500 py-3 gap-4 -rotate-3 -mx-1">
         {/* Masked gradient for clipping effect */}
         <div
           style={{

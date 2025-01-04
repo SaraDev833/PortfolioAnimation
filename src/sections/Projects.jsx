@@ -1,7 +1,9 @@
 import React from 'react'
-import projectOneImage from "@/assets/images/dark-saas-landing-page.png"
-import projectTwoImage from "@/assets/images/light-saas-landing-page.png"
-import projectThreeImage from "@/assets/images/ai-startup-landing-page.png"
+// import projectOneImage from "@/assets/images/dark-saas-landing-page.png"
+// import projectTwoImage from "@/assets/images/light-saas-landing-page.png"
+// import projectThreeImage from "@/assets/images/ai-startup-landing-page.png"
+import projectOneImage from "@/assets/images/project-1.png"
+import projectTwoImage from "@/assets/images/project-2.png"
 import GrainImage from "@/assets/images/grain.jpg"
 import ArrowIcon from "@/assets/icons/arrow-up-right.svg"
 import Link from 'next/link'
@@ -11,30 +13,30 @@ import SectionHeader from '@/components/SectionHeader'
 const Projects = () => {
     const projects = [
         {
-            company: "ACME CORP",
-            date: '2022',
-            title: "Dark Sass Landing Page",
-            description: " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus ducimus doloribus ex assumenda in corporis, ad esse facilis iste aliquam",
+            company: "Ecommerce",
+            date: '2024',
+            title: "Cresent Ecommerce Website",
+            description: "I have Created a seamless shopping experience with our eCommerce platform built on Laravel and Tailwind. Enjoy fast, secure, and intuitive browsing with a sleek design tailored for your needs. Shop with ease!",
             Link: "saradevsolutions.com",
             image: projectOneImage
         },
         {
-            company: "INNOVATIVE CO",
-            date: "2021",
-            title: "Light Saas Landing Page",
-            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere blanditiis aperiam delectus esse optio sed pariatur, ea numquam incidunt quaerat nemo voluptatum fuga a sequi, quos consequuntur eius facilis ipsa!",
+            company: "Blogging",
+            date: "2024",
+            title: "Blogging website",
+            description: "I've created a blogging platform using Next.js and MongoDB, offering a fast, modern experience. Seamlessly manage and explore insightful content with smooth navigation and secure data storage!",
             link: "#",
             image: projectTwoImage
         },
-        {
-            company: "QUANTUM DYNAMICS",
-            date: "2023",
-            title: "AI Startup Landing Page",
-            description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, ipsa laborum. Aut, eligendi. Earum quis, libero delectus fuga dolore ut autem qui sit provident doloremque? Dolore temporibus voluptas doloribus voluptates.",
-            link: "#",
-            image: projectThreeImage,
+        // {
+        //     company: "QUANTUM DYNAMICS",
+        //     date: "2023",
+        //     title: "AI Startup Landing Page",
+        //     description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, ipsa laborum. Aut, eligendi. Earum quis, libero delectus fuga dolore ut autem qui sit provident doloremque? Dolore temporibus voluptas doloribus voluptates.",
+        //     link: "#",
+        //     image: projectThreeImage,
 
-        }
+        // }
     ]
 
     return (
@@ -44,13 +46,13 @@ const Projects = () => {
                 <div className='flex flex-col gap-16 mt-8'>
                     {projects.map((project) => {
                         return (
-                            <div key={project.title} className='bg-gray-800 px-8 pt-8 lg:pt-16 lg:pr-0 rounded-3xl z-0 relative after:content-[""] after:absolute  after:inset-0 after:-z-10 after:outline-2 after:outline after:outline-white/20 sticky top-6
-                            after:-outline-offset-2 after:rounded-3xl after:pointer-events-none'>
+                            <div key={project.title} className='bg-gradient-to-l from-indigo-800 via-indigo-900 to-black px-8 pt-8 lg:pt-16 lg:pr-0 rounded-3xl z-0 relative after:content-[""] after:absolute  after:inset-0 after:-z-10 after:outline-2 after:outline after:outline-white/20 sticky top-6
+                            after:-outline-offset-2 after:rounded-3xl after:pointer-events-none overflow-hidden'>
                                 <div className='absolute inset-0 -z-10 opacity-5' style={{ backgroundImage: `url(${GrainImage.src})` }}></div>
                                 <div className='lg:grid lg:grid-cols-2 lg:gap-16 '>
 
                                     <div className='lg:pb-16'>
-                                        <div className='text-sm bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent  bg-clip-text font-bold sm:text-[16px] md:text-lg whitespace-nowrap'>
+                                        <div className='text-sm bg-gradient-to-r from-cyan-400 via-indigo-500 to-sky-500 text-transparent  bg-clip-text font-bold sm:text-[16px] md:text-lg whitespace-nowrap'>
                                             <span >{project.company}</span>
                                             <span> &bull; </span>
                                             <span >{project.date}</span>
@@ -67,7 +69,7 @@ const Projects = () => {
 
                                         </a>
                                     </div>
-                                    <div className='lg:relative lg:overflow-hidden'>
+                                    <div className='lg:relative lg:overflow-hidden overflow-hidden'>
                                         <Image src={project.image} alt='projectImage' className='mb-[2px] lg:absolute lg:h-full lg:w-auto  lg:max-w-none lg:mt-0 lg:bottom-[1px] lg:-z-10 '/>
                                     </div>
                                 </div>

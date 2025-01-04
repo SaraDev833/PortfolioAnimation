@@ -7,7 +7,7 @@
         @apply text-sm font-medium px-4 py-1.5 rounded-full hover:bg-white/15 hover:text-white transition duration-300 cursor-pointer 
     }
     .hero-ring{
-        @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-emerald-300/5 shadow-[0px_0px_80px_inset] shadow-emerald-300/5 border;
+        @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-yellow-300/5 shadow-[0px_0px_80px_inset] shadow-yellow-300/5 border;
     }
     .padding{
         @apply p-0 !important;
@@ -25,7 +25,7 @@
         @apply lg:max-w-5xl
     }
     .card{
-        @apply overflow-hidden bg-gray-800 px-8 pt-8 lg:pt-16 lg:pr-0 rounded-3xl z-0 relative w-[370px] after:content-[""] after:absolute  after:inset-0 after:-z-10 after:outline-2 after:outline after:outline-white/20 
+        @apply overflow-hidden bg-gradient-to-l from-indigo-800/15  to-black px-8 pt-8 lg:pt-16 lg:pr-0 rounded-3xl z-0 relative w-[370px] after:content-[""] after:absolute  after:inset-0 after:-z-10 after:outline-2 after:outline after:outline-white/20 
                             after:-outline-offset-2 after:rounded-3xl after:pointer-events-none h-[320px] 
     }
 }

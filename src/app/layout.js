@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${calistoga.variable}  antialiased bg-gray-900 text-white font-sans`}
+        className={`${inter.variable} ${calistoga.variable}  antialiased bg-gradient-to-r from-gray-900 to via-indigo-900 to-gray-800 text-white font-sans`}
       >
         {children}
       </body>
